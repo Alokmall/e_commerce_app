@@ -2,13 +2,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ProductProvider } from './context/Productcontext';
 import Navbar from './components/Navbar';
 import Home from './Pages/Home';
-import CartPage from './pages/CartPage';
+import CartPage from './Pages/CartPage';
 import About from './Pages/About';
 import ContactUs from './Pages/ContactUs';
 import OurBlog from './Pages/OurBlog';
 import Shop from './Pages/Shop';
-import Register from "./pages/Register";
-import Login from "./pages/Login"
+import Register from "./Pages/Register";
+import Login from "./Pages/Login"
 import { AuthProvider } from "./context/AuthContext";
 
 
