@@ -72,8 +72,6 @@ body {
   margin-left: 1rem;
   cursor: pointer;
 }
-
-/* Responsive for mobile */
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: nowrap;
@@ -107,21 +105,16 @@ body {
     display: block;
   }
 }
-/* Updated Logo */
 .navbar-logo img {
   height: 80px;
   width: auto;
   border-radius: 8px;
 }
-
-/* Smooth transition for links and layout */
 .navbar,
 .navbar-links a,
 .account-dropdown {
   transition: all 0.3s ease-in-out;
 }
-
-/* Stylish Links */
 .navbar-links a {
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -130,8 +123,6 @@ body {
   background-color: #fff;
   color: #9d5f5f;
 }
-
-/* Account Dropdown with Shadow & Animation */
 .account-dropdown {
   animation: fadeSlideIn 0.3s ease forwards;
 }
@@ -146,7 +137,6 @@ body {
   }
 }
 
-/* Mobile Adjustments */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -361,7 +351,7 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
   margin: 0 1rem 1rem;
   flex-grow: 1;
 }
-/* Mobile layout */
+
 @media (max-width:768px) {
   .nav-toggle { display:flex; }
   .nav-links {
@@ -394,7 +384,7 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
   color: var(--primary);
 }
 
-/* Hamburger Button */
+
 .nav-toggle {
   display: none;
   font-size: 1.8rem;
@@ -404,7 +394,7 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
   color: var(--text);
 }
 
-/* Mobile Menu (hidden by default) */
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -435,8 +425,6 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
   gap: 1rem;
   flex-wrap: nowrap;
 }
-
-/* Account Icon */
 .account-container {
   position: relative;
 }
@@ -448,8 +436,6 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
   color: white;
   cursor: pointer;
 }
-
-/* Account Dropdown */
 .account-dropdown {
   position: absolute;
   right: 0;
@@ -472,8 +458,6 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
 .account-dropdown a:hover {
   color: #e91e63;
 }
-
-/* === MOBILE RESPONSIVENESS === */
 @media (max-width: 768px) {
   .navbar-right {
     gap: 0.6rem;
@@ -489,8 +473,6 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
     right: 0;
   }
 }
-
-/* Slide-down animation for mobile */
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-10px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -560,8 +542,6 @@ body { font-family: Arial, sans-serif; color: var(--text); background:#f9f9f9; }
   color: #666;
   font-size: 0.9rem;
 }
-
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -596,8 +576,6 @@ body {
   text-align: center;
   background-color: #fff;
 }
-
-/* Container that wraps all content except button */
 .card-content {
   flex-grow: 1;
   display: flex;
@@ -632,12 +610,12 @@ body {
   background-color: #e91e63;
   color: white;
   border: none;
-  padding: 6px 12px;         /* Smaller padding */
-  font-size: 0.9rem;         /* Slightly smaller text */
+  padding: 6px 12px;        
+  font-size: 0.9rem;         
   border-radius: 5px;
   cursor: pointer;
-  align-self: center;        /* Keeps it centered */
-  width: fit-content;        /* Prevents stretching */
+  align-self: center;        
+  width: fit-content;        
   transition: background-color 0.3s ease;
 }
 .card button:hover {
@@ -664,16 +642,14 @@ body {
   color: #999;
   font-style: italic;
 }
-
-/* Horizontal layout for cart items */
 .cart-items {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap; /* wraps to next line if screen is small */
+  flex-wrap: wrap; 
   justify-content: center;
 }
 
-/* Individual cart product card */
+
 .cart-item {
   background-color: #fff;
   padding: 1rem;
@@ -773,8 +749,6 @@ body {
   color: #333;
   background-color: #fdfdfd;
 }
-
-/* === Banner === */
 .banner {
   background: linear-gradient(to right, #ff9966, #ff5e62);
   height: 280px;
@@ -789,8 +763,6 @@ body {
   color: #fff;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
-
-/* === Content Box === */
 .content {
   max-width: 1100px;
   margin: -60px auto 3rem;
@@ -799,16 +771,12 @@ body {
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
 }
-
-/* === Introduction === */
 .intro p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-align: center;
   color: #444;
 }
-
-/* === Two Column Info Section === */
 .two-col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -834,8 +802,6 @@ body {
 .two-col ul {
   list-style: disc inside;
 }
-
-/* === Mission & Contact === */
 .mission,
 .contact {
   margin-bottom: 2.5rem;
@@ -856,8 +822,6 @@ body {
   margin: 0.3rem 0;
   color: #555;
 }
-
-/* === Testimonials === */
 .testimonials {
   margin-bottom: 3rem;
 }
@@ -884,8 +848,6 @@ body {
   margin-top: 1rem;
   color: #e91e63;
 }
-
-/* === Team Section === */
 .team-members {
   display: flex;
   flex-wrap: wrap;
@@ -921,8 +883,6 @@ body {
   color: #777;
   font-size: 0.95rem;
 }
-
-/* === Footer === */
 .shop-footer {
   background-color: #1a1a1a;
   color: #ccc;
@@ -964,8 +924,6 @@ body {
   line-height: 1.6;
   color: #bbb;
 }
-
-/* === Responsive Styles === */
 @media (max-width: 768px) {
   .banner {
     height: 200px;
@@ -987,12 +945,7 @@ body {
     max-width: 90%;
   }
 }
-
-
-
-
 /* SHOP PAGE */
-
 .shop-page {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
@@ -1015,8 +968,6 @@ body {
   font-size: 1.2rem;
   color: #666;
 }
-
-/* Vertical layout for features */
 .features-section {
   display: flex;
   flex-direction: column;
@@ -1024,8 +975,6 @@ body {
   padding: 2rem 1rem;
   align-items: center;
 }
-
-/* Each card with full width image */
 .feature-card {
   width: 95%;
   max-width: 900px;
@@ -1147,8 +1096,6 @@ body {
   padding: 2rem;
   background-color: #f7f7f7;
 }
-
-/* Responsive Padding */
 @media (max-width: 768px) {
   .shop-footer {
     padding: 2rem 1rem;

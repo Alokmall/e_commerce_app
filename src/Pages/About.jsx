@@ -3,12 +3,10 @@ import React from 'react';
 export default function AboutUs() {
   return (
     <div className="about-page">
-      {/* Banner */}
       <section className="banner">
         <h1>About Us</h1>
       </section>
 
-      {/* Main Content */}
       <section className="content">
         <div className="intro">
           <p>
@@ -43,7 +41,7 @@ export default function AboutUs() {
           </p>
         </div>
 
-        {/* Testimonials */}
+    
         <div className="testimonials">
           <h2>Testimonials</h2>
           <div className="testimonial-cards">
@@ -62,7 +60,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Fashion Team */}
+        
         <div className="team">
           <h2>Our Fashion Team</h2>
           <div className="team-members">
@@ -84,7 +82,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Contact Info */}
+      
         <div className="contact">
           <h2>Contact Us</h2>
           <p>Email: support@clothzy.in</p>
@@ -93,7 +91,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="shop-footer">
         <div className="footer-section">
           <h4>Customer Service</h4>

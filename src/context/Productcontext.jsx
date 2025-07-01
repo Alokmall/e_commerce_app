@@ -8,7 +8,7 @@ export function ProductProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // 🛒 Add to Cart with Quantity Support
+
   const addToCart = (product) => {
     setCart(prevCart => {
       const existing = prevCart.find(item => item.id === product.id);
@@ -22,12 +22,12 @@ export function ProductProvider({ children }) {
     });
   };
 
-  // ❌ Remove product from cart
+  
   const removeFromCart = (id) => {
     setCart(prevCart => prevCart.filter(item => item.id !== id));
   };
 
-  // ➕ Increase quantity
+  
   const increment = (id) => {
     setCart(prevCart =>
       prevCart.map(item =>
@@ -36,7 +36,7 @@ export function ProductProvider({ children }) {
     );
   };
 
-  // ➖ Decrease quantity (but not below 1)
+  
   const decrement = (id) => {
     setCart(prevCart =>
       prevCart.map(item =>
@@ -47,14 +47,14 @@ export function ProductProvider({ children }) {
     );
   };
 
-  // 📦 Fetch Products
+  
   useEffect(() => {
     axios.get('https://fakestoreapi.com/products')
       .then(res => setProducts(res.data))
       .finally(() => setLoading(false));
   }, []);
 
-  // 🧠 Context Provider
+
   return (
     <ProductContext.Provider value={{
       products,

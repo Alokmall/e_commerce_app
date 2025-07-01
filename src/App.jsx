@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ProductProvider } from './context/Productcontext';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './Pages/Home';
 import CartPage from './pages/CartPage';
 import About from './Pages/About';
 import ContactUs from './Pages/ContactUs';
